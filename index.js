@@ -1,8 +1,14 @@
 // TODO: Include packages needed for this application
 
+const { constants } = require("buffer");
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require ("util");
+const {RSA_PKCS1_0AEP_PADDING } = require ("constants");
+
+const generateMarkdown = require("./utils/generateMarkdown.js");
+
+
 
 // TODO: Create an array of questions for user input
 const questions = [];
