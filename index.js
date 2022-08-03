@@ -61,6 +61,14 @@ const questions = [
         name: "email",
         message:"What is your email address?",
     },
+       {
+        type: "input",
+        name: "licenses",
+        message:"What is the license for your application?",
+        choices: [
+            
+        ]
+    },
  
 ];
 
