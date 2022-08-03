@@ -9,7 +9,7 @@ const {RSA_PKCS1_0AEP_PADDING } = require ("constants");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const { log } = require("console");
 
-const writeFileAsync = until.promisfy(fs.writeFile);
+//const writeFileAsync = util.promisfy(fs.writeFile);
 
 
 
@@ -36,8 +36,32 @@ const questions = [
         message: "What are the installation instructions for your application?",
     },
     {
+        type:"input",
+        name:"usage",
+        message:"What is the usage of your application?",
 
     },
+    {
+        type: "input",
+        name: "contributing",
+        message:"What are the contributing guidelines for your application?",
+    },
+    {
+        type: "input",
+        name: "tests",
+        message:"What are the test commands for this application?",
+    },
+    {
+        type: "input",
+        name: "github",
+        message:"Your Github URL for questions:",
+    },
+    {
+        type: "input",
+        name: "email",
+        message:"What is your email address?",
+    },
+ 
 ];
 
 // TODO: Create a function to write README file
@@ -53,7 +77,7 @@ function writeToFile(filename, data) {
 
 
 // TODO: Create a function to initialize app
-function init() {
+async function init() {
     try{
         let answers = await inquirer.prompt(questions);
         console.log(answers);
