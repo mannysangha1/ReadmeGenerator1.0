@@ -34,11 +34,11 @@ const questions = [
         type: "",
         name: "",
         message: "",
-    }
+    },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(filename, data) {
     fs.writeFile("readme.md", data, (err)=>{
         if(err){
             console.log(err);
@@ -46,6 +46,7 @@ function writeToFile(fileName, data) {
     });
     console.log("file written");
 
+}
 
 
 // TODO: Create a function to initialize app
