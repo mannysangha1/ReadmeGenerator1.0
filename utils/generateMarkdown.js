@@ -43,7 +43,24 @@ function generateMarkdown(data) {
 
  ${data.license}
 
- 
+ ## Contributing
+
+ ${data.contributing}
+
+ Contact info
+
+ ${data.gitub}
+
+
+ ${data.email}
+
+ ## Tests
+
+ ${data.tests}
+
+
+
+
 
 `;
 }
