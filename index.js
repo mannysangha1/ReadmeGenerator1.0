@@ -13,7 +13,13 @@ const writeFileAsync = until.promisfy(fs.writeFile);
 
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    {
+        type: "",
+        name: "",
+        message: "",
+    }
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
