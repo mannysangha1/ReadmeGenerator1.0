@@ -53,9 +53,16 @@ function writeToFile(filename, data) {
 function init() {
     try{
         let answers = await inquirer.prompt(questions);
-        
+        console.log(answers);
+        let markdown = generateMarkdown(answers);
+        let writeFile = writeToFile ("readMe.md", markdown);
+    
+    }
+    catch(err){
+        throw err
     }
 }
+
 
 // Function call to initialize app
 init();
