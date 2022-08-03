@@ -20,6 +20,15 @@ function generateMarkdown(data) {
 
   # Sceenshots
 
+  ## Table of contents
+
+  * [Installation)(#Installations)
+  * [Usage](#Usage)
+  * [Credits](#Credits)
+  * [License](#License)
+
+  
+
 `;
 }
 
