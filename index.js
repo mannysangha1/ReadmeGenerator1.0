@@ -18,6 +18,21 @@ const questions = [
         type: "",
         name: "",
         message: "",
+    },
+    {
+        type: "",
+        name: "",
+        message: "",
+    },
+    {
+        type: "",
+        name: "",
+        message: "",
+    },
+    {
+        type: "",
+        name: "",
+        message: "",
     }
 ];
 
