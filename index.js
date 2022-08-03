@@ -16,24 +16,27 @@ const writeFileAsync = until.promisfy(fs.writeFile);
 // TODO: Create an array of questions for user input
 const questions = [
     {
-        type: "",
-        name: "",
-        message: "",
+        type: "input",
+        name: "title",
+        message: "What is the title of your project?",
     },
     {
-        type: "",
-        name: "",
-        message: "",
+        type: "input",
+        name: "description",
+        message: "Describe your project",
     },
     {
-        type: "",
-        name: "",
-        message: "",
+        type: "input",
+        name: "credits",
+        message: "Do you have any collaborators you would like to credit?",
     },
     {
-        type: "",
-        name: "",
-        message: "",
+        type: "input",
+        name: "installation",
+        message: "What are the installation instructions for your application?",
+    },
+    {
+
     },
 ];
 
