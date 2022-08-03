@@ -66,7 +66,9 @@ const questions = [
         name: "licenses",
         message:"What is the license for your application?",
         choices: [
-            
+            "[![License](https://img.shields.io/badge/License%20-MIT-blue)](https://opensource.org/licenses/MIT)",
+            "[![License](https://img.shields.io/badge/License%20-Mozilla-yellow)](https://opensource.org/licenses/MPL-2.0)",
+            "[![License](https://img.shields.io/badge/License%20-GNU-violet)](https://opensource.org/licenses/gpl-license)",
         ]
     },
  
