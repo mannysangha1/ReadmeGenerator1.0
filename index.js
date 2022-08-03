@@ -59,10 +59,9 @@ function init() {
     
     }
     catch(err){
-        throw err
+        throw err 
     }
 }
-
 
 // Function call to initialize app
 init();
