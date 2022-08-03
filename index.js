@@ -7,6 +7,7 @@ const util = require ("util");
 const {RSA_PKCS1_0AEP_PADDING } = require ("constants");
 
 const generateMarkdown = require("./utils/generateMarkdown.js");
+const { log } = require("console");
 
 const writeFileAsync = until.promisfy(fs.writeFile);
 
@@ -37,10 +38,20 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile("readme.md", data, (err)=>{
+        if(err){
+            console.log(err);
+        }
+    });
+    console.log("file written");
+
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    try
+}
 
 // Function call to initialize app
 init();
