@@ -51,7 +51,10 @@ function writeToFile(filename, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    try
+    try{
+        let answers = await inquirer.prompt(questions);
+        
+    }
 }
 
 // Function call to initialize app
