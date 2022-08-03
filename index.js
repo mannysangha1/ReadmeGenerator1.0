@@ -8,7 +8,7 @@ const {RSA_PKCS1_0AEP_PADDING } = require ("constants");
 
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-const writeFileAsync = until.promisfy(fs.writeFile)
+const writeFileAsync = until.promisfy(fs.writeFile);
 
 
 
