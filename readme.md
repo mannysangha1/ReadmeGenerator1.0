@@ -1,8 +1,8 @@
-# readme generator
+# 
 
   ## Description 
 
-  undefined
+  
 
   # Sceenshots
 
@@ -15,34 +15,41 @@
 
   ## Installation
 
-  npm install. Dependencies include inquirer.
+  
 
   ## Usage
 
-  Generating readMe.md files via the command line.
+  
 
  ## Credits
 
- n/a
+ 
 
  ## License
 
- undefined
+[![License](https://img.shields.io/badge/License%20-MIT-blue)](https://opensource.org/licenses/MIT)
+
+
+    ## license
+
+    License is MIT standard license
+
+https://www.gnu.org/licenses/lgpl-3.0.en.html
 
  ## Contributing
 
- Email for approval before contributing.
+ 
 
 ## Contact info
 
- undefined
+ 
 
 
- mannysangha020@gmail.com
+ 
 
  ## Tests
 
- n/a
+ 
 
 
 

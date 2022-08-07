@@ -5,14 +5,18 @@ const { listenerCount, chdir } = require("process");
 
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(license !== 'None') {
-    return `[![GNU Public License](https://img.shields.io/badge/GNU-general%20public%20license-green)]`
-  } else {
-    return ``
+  if(license === 'MPL') {
+    return `[![License](https://img.shields.io/badge/License%20-Mozilla-yellow)](https://opensource.org/licenses/MPL-2.0)`
+  } else if(license === "MIT"){
+    return `[![License](https://img.shields.io/badge/License%20-MIT-blue)](https://opensource.org/licenses/MIT)`
+  }
+  else if (license === "GPL"){
+    return `[![License](https://img.shields.io/badge/License%20-GNU-violet)](https://opensource.org/licenses/gpl-license)`
   }
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
+// use this function for licenses at the bottom
 function renderLicenseLink(license) {
   return `https://www.gnu.org/licenses/lgpl-3.0.en.html`;
 }
@@ -36,7 +40,7 @@ function generateMarkdown(data) {
 
   ## Description 
 
-  ${data.desciption}
+  ${data.description}
 
   # Sceenshots
 
@@ -61,7 +65,11 @@ function generateMarkdown(data) {
 
  ## License
 
- ${data.license}
+${renderLicenseBadge(data.licenses)}
+
+${renderLicenseSection(data.licenses)}
+
+${renderLicenseLink(data.license)}
 
  ## Contributing
 
@@ -69,7 +77,7 @@ function generateMarkdown(data) {
 
 ## Contact info
 
- ${data.gitub}
+ ${data.github}
 
 
  ${data.email}
