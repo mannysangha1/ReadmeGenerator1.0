@@ -18,7 +18,14 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 // use this function for licenses at the bottom
 function renderLicenseLink(license) {
-  return `https://www.gnu.org/licenses/lgpl-3.0.en.html`;
+  if(license === "GPL") {
+    return `https://www.gnu.org/licenses/lgpl-3.0.en.html`
+  } else if(license === "MIT") {
+    return `https://opensource.org/licenses/MIT`
+  }
+  else if (license === "MPL") {
+    return `https://opensource.org/licenses/MPL-2.0`
+  }
 }
 
 // TODO: Create a function that returns the license section of README

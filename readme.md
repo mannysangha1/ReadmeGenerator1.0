@@ -1,8 +1,8 @@
-# 
+# readMe Generator
 
   ## Description 
 
-  
+  This is a node based command line application that generates readMe.md files.
 
   # Sceenshots
 
@@ -15,7 +15,7 @@
 
   ## Installation
 
-  
+  npm install. Dependencies include inquirer.
 
   ## Usage
 
@@ -23,7 +23,7 @@
 
  ## Credits
 
- 
+ n/a
 
  ## License
 
@@ -34,11 +34,11 @@
 
     License is MIT standard license
 
-https://www.gnu.org/licenses/lgpl-3.0.en.html
+undefined
 
  ## Contributing
 
- 
+ Generating readMe.md files via the command line.
 
 ## Contact info
 
