@@ -1,8 +1,8 @@
-# 
+# Readme Generator 1.0
 
   ## Description 
 
-  
+  Command line using node to generate readme
 
   # Sceenshots
 
@@ -15,15 +15,15 @@
 
   ## Installation
 
-  
+  nmp init -y
 
   ## Usage
 
-  
+  generate readme files
 
  ## Credits
 
- 
+ n/a
 
  ## License
 
@@ -38,18 +38,18 @@ https://opensource.org/licenses/MIT
 
  ## Contributing
 
- 
+ Email before approving 
 
 ## Contact info
 
- 
+ https://github.com/mannysangha1
 
 
- 
+ mannysangha020@gmail.com
 
  ## Tests
 
- 
+ n/a
 
 
 
