@@ -13,18 +13,24 @@ function renderLicenseBadge(license) {
   else if (license === "GPL"){
     return `[![License](https://img.shields.io/badge/License%20-GNU-violet)](https://opensource.org/licenses/gpl-license)`
   }
+  else {
+    console.log(license)
+  }
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 // use this function for licenses at the bottom
 function renderLicenseLink(license) {
   if(license === "GPL") {
-    return `https://www.gnu.org/licenses/lgpl-3.0.en.html`
+    return `[GNU Lesser General Public License](https://www.gnu.org/licenses/lgpl-3.0.en.html)`
   } else if(license === "MIT") {
-    return `https://opensource.org/licenses/MIT`
+    return `[MIT][https://opensource.org/licenses/MIT)`
   }
   else if (license === "MPL") {
-    return `https://opensource.org/licenses/MPL-2.0`
+    return `[${license}](https://opensource.org/licenses/MPL-2.0)`
+  }
+  else {
+    console.log("license")
   }
 }
 
@@ -48,10 +54,14 @@ function renderLicenseSection(license) {
 
     License is ${license} standard license`
   }
+  else{
+    console.log(license)
+  }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  console.log(data)
   return `# ${data.title}
 
   ## Description 
@@ -93,7 +103,9 @@ ${renderLicenseLink(data.licenses)}
 
 ## Contact info
 
- ${data.github}
+ ${data.github} 
+
+
 
 
  ${data.email}
